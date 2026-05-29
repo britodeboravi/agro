@@ -1,11 +1,18 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+/* Reset básico para evitar erros de espaçamento */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    box-sizing: border-box;
 }
 
-/* Estilo da Barra de Navegação - Inspirado no AgroAPI */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f0f4f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar - Inspirada no topo do portal AgroAPI */
 .navbar {
     background-color: #00564a; 
     padding: 1rem 5%;
@@ -15,19 +22,16 @@ body {
     color: white;
 }
 
-.navbar ul { list-style: none; display: flex; gap: 20px; }
+.navbar ul { display: flex; list-style: none; gap: 20px; }
 .navbar a { color: white; text-decoration: none; font-weight: bold; }
 
-/* CONFIGURAÇÃO DA IMAGEM DE CAPA */
+/* Capa do Site com a sua imagem instalada */
 .hero {
-    /* ADICIONE O NOME DA SUA IMAGEM NO CAMPO ABAIXO */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                       url('agroetop.png');
-    
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,50 +39,47 @@ body {
     color: white;
 }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
+.hero-content h1 { font-size: 3rem; margin-bottom: 15px; }
 
 .btn-cta {
-    background-color: #78be20; /* Verde claro sustentável */
+    background-color: #78be20;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 30px;
+    padding: 12px 25px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-/* Grid de Cards - Estilo Catálogo de APIs e Biblioteca Multimídia */
+/* Cards de Conteúdo - Estilo Biblioteca Multimídia */
 .container { padding: 50px 5%; }
-.section-title { text-align: center; color: #00564a; margin-bottom: 40px; }
+.section-title { text-align: center; color: #00564a; margin-bottom: 30px; }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
     background: white;
-    border-radius: 15px;
-    padding: 30px;
+    padding: 25px;
+    border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-.card:hover { transform: translateY(-10px); }
+.card:hover { transform: translateY(-5px); }
+.card-icon { font-size: 2.5rem; margin-bottom: 10px; }
 
 .btn-play {
-    background-color: #78be20;
-    border: none;
-    padding: 10px 20px;
+    background-color: #00564a;
     color: white;
-    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
     cursor: pointer;
-    font-weight: bold;
 }

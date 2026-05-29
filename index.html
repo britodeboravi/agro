@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro: Desenvolvimento e Sustentabilidade</title>
+    <!-- ESTA LINHA É A MAIS IMPORTANTE PARA O ESTILO FUNCIONAR -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,50 +13,37 @@
             <div class="logo">AgroSustentável</div>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Aprenda Brincando</a></li>
+                <li><a href="#">Biblioteca</a></li>
                 <li><a href="#">Tecnologias</a></li>
-                <li><a href="#">Multimídia</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de Capa -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Agro é Forte: Desenvolvimento com Sustentabilidade</h1>
-            <p>Conheça as inovações e modelos que equilibram produção e preservação.</p>
-            <button class="btn-cta" onclick="scrollParaConteudo()">Começar Jornada</button>
+            <h1>Agro é Forte: Equilíbrio e Ciência</h1>
+            <p>Desenvolvimento e Sustentabilidade para o futuro do campo.</p>
+            <button class="btn-cta" onclick="scrollParaConteudo()">Explorar Agora</button>
         </div>
     </section>
 
-    <!-- Conteúdo principal inspirado nos temas da Embrapa -->
     <main class="container" id="conteudo">
-        <h2 class="section-title">Explore os Temas da Ciência</h2>
+        <h2 class="section-title">Aprenda Brincando com a Ciência</h2>
         <div class="card-grid">
             <div class="card" onclick="aprender('Ecologia')">
                 <div class="card-icon">🌱</div>
-                <h3>Ecologia e Meio Ambiente</h3>
-                <p>Descubra como protegemos nossas florestas e águas.</p>
-                <button class="btn-play">Brincar e Aprender</button>
+                <h3>Ecologia</h3>
+                <p>Proteção de florestas e águas.</p>
+                <button class="btn-play">Jogar</button>
             </div>
             <div class="card" onclick="aprender('Tecnologia')">
                 <div class="card-icon">🚀</div>
-                <h3>Agro Digital (APIs)</h3>
-                <p>A tecnologia que move o campo com inteligência e dados.</p>
-                <button class="btn-play">Ver Inovações</button>
-            </div>
-            <div class="card" onclick="aprender('Solos')">
-                <div class="card-icon">🌾</div>
-                <h3>Solos e Vida</h3>
-                <p>O segredo da alimentação saudável começa no cuidado com a terra.</p>
-                <button class="btn-play">Explorar Solo</button>
+                <h3>Agro Digital</h3>
+                <p>APIs e inovações tecnológicas.</p>
+                <button class="btn-play">Descobrir</button>
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <p>© 2024 - Inspirado nos portais Embrapa (AgroAPI e Contando Ciência na Web)</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
