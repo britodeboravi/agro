@@ -1,13 +1,13 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #f4f7f6;
-    color: #333;
 }
 
-/* Navbar estilo AgroAPI */
+/* Estilo da Barra de Navegação - Inspirado no AgroAPI */
 .navbar {
-    background-color: #00564a; /* Verde escuro Embrapa */
+    background-color: #00564a; 
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -18,40 +18,63 @@ body {
 .navbar ul { list-style: none; display: flex; gap: 20px; }
 .navbar a { color: white; text-decoration: none; font-weight: bold; }
 
-/* Hero Section */
+/* CONFIGURAÇÃO DA IMAGEM DE CAPA */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('agro-bg.jpg'); /* Adicione uma imagem de campo */
+    /* ADICIONE O NOME DA SUA IMAGEM NO CAMPO ABAIXO */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('agroetop.png');
+    
     background-size: cover;
-    color: white;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px;
+    color: white;
 }
 
-/* Cards inspirados no catálogo de APIs */
-.container { padding: 40px 5%; }
-.section-title { text-align: center; margin-bottom: 30px; color: #00564a; }
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.btn-cta {
+    background-color: #78be20; /* Verde claro sustentável */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Grid de Cards - Estilo Catálogo de APIs e Biblioteca Multimídia */
+.container { padding: 50px 5%; }
+.section-title { text-align: center; color: #00564a; margin-bottom: 40px; }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .card {
     background: white;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s;
-    cursor: pointer;
 }
 
 .card:hover { transform: translateY(-10px); }
-.card-icon { font-size: 3rem; margin-bottom: 15px; }
 
 .btn-play {
-    background-color: #78be20; /* Verde claro sustentável */
+    background-color: #78be20;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -59,5 +82,3 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-
-.footer { text-align: center; padding: 20px; background: #333; color: white; }

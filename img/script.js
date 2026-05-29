@@ -1,9 +1,12 @@
 function aprender(tema) {
     const mensagens = {
-        'Ecologia': 'Iniciando aventura na floresta! Vamos proteger a biodiversidade? 🌳',
-        'Tecnologia': 'Conectando às APIs da Embrapa... A agricultura digital é o futuro! 💻',
-        'Solos': 'Mergulhando na terra! Descubra como os nutrientes alimentam o mundo. 🥕'
+        'Ecologia': 'Iniciando aventura na floresta! 🌳 Vamos proteger a biodiversidade?',
+        'Tecnologia': 'Conectando ao catálogo de APIs... 🚀 A agricultura digital reduz custos e tempo!',
+        'Solos': 'Mergulhando na terra! 🌾 O segredo de uma alimentação saudável começa aqui.'
     };
-    
-    alert(mensagens[tema] || "Bem-vindo ao portal de conhecimento!");
+    alert(mensagens[tema] || "Bem-vindo ao mundo da ciência!");
+}
+
+function scrollParaConteudo() {
+    document.getElementById('conteudo').scrollIntoView({ behavior: 'smooth' });
 }
