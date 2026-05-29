@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro: Desenvolvimento e Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header inspirado no AgroAPI -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">AgroSustentável</div>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Aprenda Brincando</a></li>
+                <li><a href="#">Tecnologias</a></li>
+                <li><a href="#">Sobre a Embrapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section: O equilíbrio -->
+    <section class="hero">
+        <h1>Agro é Forte: Desenvolvimento com Sustentabilidade</h1>
+        <p>Explore inovações e modelos agropecuários para um futuro verde.</p>
+    </section>
+
+    <!-- Seção de Aprendizado Interativo (Estilo Contando Ciência) -->
+    <main class="container">
+        <h2 class="section-title">Escolha um Tema para Explorar</h2>
+        <div class="card-grid">
+            <!-- Card 1: Ecologia e Meio Ambiente -->
+            <div class="card" onclick="aprender('Ecologia')">
+                <div class="card-icon">🌱</div>
+                <h3>Ecologia</h3>
+                <p>Descubra como protegemos nossas florestas e águas.</p>
+                <button class="btn-play">Brincar e Aprender</button>
+            </div>
+
+            <!-- Card 2: Tecnologias (AgroAPI style) -->
+            <div class="card" onclick="aprender('Tecnologia')">
+                <div class="card-icon">🚀</div>
+                <h3>Agro Digital</h3>
+                <p>Conheça as APIs e inovações que movem o campo.</p>
+                <button class="btn-play">Ver Inovações</button>
+            </div>
+
+            <!-- Card 3: Solos e Alimentos -->
+            <div class="card" onclick="aprender('Solos')">
+                <div class="card-icon">🌾</div>
+                <h3>Solos e Vida</h3>
+                <p>O segredo de uma alimentação saudável começa na terra.</p>
+                <button class="btn-play">Explorar Solo</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 - Inspirado nos portais Embrapa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
